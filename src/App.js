@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Review from "./Review";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="grid min-h-screen">
+      <section className="max-w-2xl w-4/5 mx-auto">
+        <div className="my-12">
+          <h1 className="text-4xl text-center font-bold">Our Reviews</h1>
+          <div className="w-24 h-1 bg-blue-400 mx-auto mt-2"></div>
+        </div>
+        <Review></Review>
+      </section>
+    </main>
   );
 }
 
